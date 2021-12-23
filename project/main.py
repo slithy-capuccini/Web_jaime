@@ -8,5 +8,9 @@ app.secret_key='A?Y2$W-N+~A.+bqt'
 def home():
     return render_template('index.html')
 
+@app.route("/content/")
+def content():
+    return render_template('content.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

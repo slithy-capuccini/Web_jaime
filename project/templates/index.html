@@ -1,5 +1,36 @@
 {% extends "base.html" %}
-{% block title %}Home Page{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+{% endblock %}
+{% block title %}
+Home Page
+{% endblock %}
 {% block content %}
-<h3>me cago en toda tu reputa madre</h3>
+
+<div class="row">
+    <div class="column" style="background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80')">
+        <h2 class="text-center">Katz</h2>
+        <div class="wrapper">
+            <button class="btn-center">Pulse me</button>        
+        </div>
+    </div>
+    <div class="column" id="sora">
+        <h2 class="text-center">Sora</h2>
+        <div class="wrapper">
+            <button class="btn-center">Pulse me</button>        
+        </div>
+    </div>
+</div>
+<h1>fas</h1>
+<h1>fas</h1>
+<h1>fas</h1>
+<h1>fas</h1>
+<h1>fas</h1>
+<h1>fas</h1>
+<h1>fas</h1>
+<h1>fas</h1>
+<h1>fas</h1>
+<h1>fas</h1>
+
+<!--https://www.paypal.com/buttons/-->
 {% endblock %}

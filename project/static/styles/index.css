@@ -1,0 +1,28 @@
+.row{
+    width: 100%;
+    height: 55vh;
+    background-image: url(../images/purple_bg.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column {
+    padding: 15vh;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.wrapper {
+    text-align: center;
+}
+.btn-center{
+    position: relative;
+    top:5vh;
+    align-self: flex-start;
+}
+.text-center{
+    text-align: center; 
+    color: white;
+}
