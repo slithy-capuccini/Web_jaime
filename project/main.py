@@ -12,5 +12,15 @@ def home():
 def content():
     return render_template('content.html')
 
+@app.route("/katz/")
+def katz():
+    return render_template('katz.html')
+@app.route("/sora/")
+def sora():
+    return render_template('sora.html')
+
+@app.route("/combine/")
+def combine():
+    return render_template('combine.html')
 if __name__ == '__main__':
     app.run(debug=True)
