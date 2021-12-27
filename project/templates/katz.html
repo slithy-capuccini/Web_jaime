@@ -1,11 +1,72 @@
 {% extends "base.html" %}
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/katz.css') }}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+<script>
+    $(document).ready(function(){
+        $("#katz").addClass("active");
+    });
+</script>
 {% endblock %}
 {% block title %}
 Katz
 {% endblock %}
 {% block content %}
-<br></br>
-<h1>Joder dude vaya dia</h1>
+
+<div class="dropdown">
+    <nav class="nav-katz">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Red_link_logo.png">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tutorial  <i class="fa fa-caret-down"></i> </a>
+                <ul style="z-index: 1;">
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Jquery</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Web desing <i class="fa fa-caret-down"></i></a>
+                <ul style="z-index: 1;">
+                    <li><a href="#">Front end</a></li>
+                    <li><a href="#">Back end</a></li>
+                    <li><a href="#">Full stack  <i style="transform: rotate(-90deg);" class="fa fa-caret-down"></i></a>
+                        <ul style="z-index: 2;">
+                            <li><a href="#">Links</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+
+        </ul>
+    </nav>
+</div>
+<div class="row-first">
+    <div class="column">
+        <div class="div-left">
+            <h1 class="text-center" id="title">KATZ</h1>
+            <h3 class="text-left" id="paragraph">Soy editor, edito, edito como si cada puto momento de mi maldita vida fuera un frame, cada frame que veo se convierte en maravilla, porque soy editor edito, editar es como mi vida sin que sea mi vida porque la vida es larga y no lo es</h3>
+        </div>
+    </div>
+    <div class="column">
+        <img src="{{ url_for('static', filename='/images/lead-katz.jpg')}}" class="img-center" id="img-port">
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <div class="div-left">
+            <h1 class="text-center" id="title">KATZ</h1>
+            <h3 class="text-left" id="paragraph">Soy editor, edito, edito como si cada puto momento de mi maldita vida fuera un frame, cada frame que veo se convierte en maravilla, porque soy editor edito, editar es como mi vida sin que sea mi vida porque la vida es larga y no lo es</h3>
+        </div>
+    </div>
+    <div class="column">
+        <img src="{{ url_for('static', filename='/images/lead-katz.jpg')}}" class="img-center" id="img-port">
+    </div>
+</div>
 {% endblock %}

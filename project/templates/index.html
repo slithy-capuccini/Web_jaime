@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#home").addClass("active");
+    });
+</script>
 {% endblock %}
 {% block title %}
 Home Page
@@ -14,7 +20,7 @@ Home Page
         </div>
         <h2 class="text-center">Katz</h2>
         <div class="wrapper">
-            <button class="btn-center">Pulse me</button>        
+            <a href="{{url_for('katz')}}"><button class="btn-center">Pulse me</button></a>        
         </div>
     </div>
     <div class="column" id="sora">
@@ -23,7 +29,7 @@ Home Page
         </div>
         <h2 class="text-center">Sora</h2>
         <div class="wrapper">
-            <button class="btn-center">Pulse me</button>        
+            <a href="{{url_for('sora')}}"><button class="btn-center">Pulse me</button></a>   
         </div>
     </div>
 </div>

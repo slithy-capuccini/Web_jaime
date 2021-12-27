@@ -1,11 +1,70 @@
 {% extends "base.html" %}
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/katz.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/sora.css') }}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#sora").addClass("active");
+    });
+</script>
 {% endblock %}
 {% block title %}
-Katz
+Sora
 {% endblock %}
 {% block content %}
-<br></br>
-<h1>Bueno en verdad no estuvo tan mal</h1>
+
+<div class="dropdown">
+    <nav class="nav-katz">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Red_link_logo.png">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tutorial  <i class="fa fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Jquery</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Web desing <i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">Front end</a></li>
+                    <li><a href="#">Back end</a></li>
+                    <li><a href="#">Full stack  <i style="transform: rotate(-90deg);" class="fa fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">Links</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+
+        </ul>
+    </nav>
+</div>
+<div class="row-first">
+    <div class="column">
+        <img src="{{ url_for('static', filename='/images/lead-katz.jpg')}}" class="img-center" id="img-port">
+    </div>
+    <div class="column">
+        <div class="div-left">
+            <h1 class="text-center" id="title">SORA</h1>
+            <h3 class="text-left" id="paragraph">Soy musico, compongo, compongo como si cada puto momento de mi maldita vida fuera una nota, cada nota que veo se convierte en maravilla, porque soy musico compongo, componer es como mi vida sin que sea mi vida porque la vida es larga y no lo es</h3>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <img src="{{ url_for('static', filename='/images/lead-katz.jpg')}}" class="img-center" id="img-port">
+    </div>
+    <div class="column">
+        <div class="div-left">
+            <h1 class="text-center" id="title">SORA</h1>
+            <h3 class="text-left" id="paragraph">Soy musico, compongo, compongo como si cada puto momento de mi maldita vida fuera una nota, cada nota que veo se convierte en maravilla, porque soy musico compongo, componer es como mi vida sin que sea mi vida porque la vida es larga y no lo es</h3>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -11,7 +11,7 @@
 }
 .row{
     width: 100%;
-    height: 83vh;
+    height: 100vh;
     background-image: url(../images/purple_bg.jpg);
     background-size: 100%;
     display: flex;
@@ -43,8 +43,7 @@
     line-height: 1.5
 }
 .dropdown{
-    margin-top: 39px;
-
+    padding-top: 39px;
 }
 .nav-katz{
     height: 60px;
@@ -117,10 +116,10 @@
     font-style: bold;
 }
 .div-left{
-    padding-right: 10vw;
+    padding-left: 5vw;
 }
 #img-port{
     position: relative;
-    right:5vw;
+    left:5vw;
     width: 100%;
 }
